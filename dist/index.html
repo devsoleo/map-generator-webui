@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <script src="./scripts/display.js"></script>
+
+  <script src="./scripts/pre_wasm_exec.js"></script>
+
+  <title>Map Generator</title>
+</head>
+<body>
+  <input type="number" id="border" placeholder="Border" />
+  <input type="text" id="seed" placeholder="Seed (leave empty for random)" />
+
+  <button>Run</button>
+
+  <canvas id="canvas" width="500" height="500"></canvas>
+
+  <script>
+    document.querySelector("button").addEventListener("click", async () => {
+      const options = {
+        border: document.querySelector("#border").value,
+        seed: seed,
+      }
+
+      console.log()
+
+      // runGo([JSON.stringify(options)])
+    })
+  </script>
+
+  <style>
+    * {
+      background-color: white;
+    }
+  </style>
+
+  <script src="./scripts/wasm_exec.js"></script>
+  <script src="./scripts/post_wasm_exec.js"></script>
+</body>
+</html>
