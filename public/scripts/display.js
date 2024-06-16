@@ -11,6 +11,8 @@ function display(data) {
   const cellWidth = canvas.width / cols
   const cellHeight = canvas.height / rows
 
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
       const value = data[i][j]

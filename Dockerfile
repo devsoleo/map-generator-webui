@@ -8,7 +8,7 @@ RUN npm install
 COPY . .
 
 RUN apk --no-cache add curl
-RUN curl -L https://github.com/devsoleo/map-generator/releases/download/latest/main.wasm -o ./dist/build/main.wasm
+RUN curl -L https://github.com/devsoleo/map-generator/releases/download/latest/main.wasm -o ./public/build/main.wasm
 
 EXPOSE 3000
 

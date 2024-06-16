@@ -10,8 +10,8 @@
   <title>Map Generator</title>
 </head>
 <body>
-  <input type="number" id="border" placeholder="Border" />
-  <input type="text" id="seed" placeholder="Seed (leave empty for random)" />
+  <input type="number" id="border" placeholder="Border" value="100" />
+  <input type="text" id="seed" placeholder="Seed (leave empty for random)" value="566389352025005146" />
 
   <button>Run</button>
 
@@ -20,13 +20,12 @@
   <script>
     document.querySelector("button").addEventListener("click", async () => {
       const options = {
-        border: document.querySelector("#border").value,
-        seed: seed,
+        border: parseInt(document.querySelector("#border").value),
+        seed: parseInt(document.querySelector("#seed").value) ,
       }
 
-      console.log()
-
-      // runGo([JSON.stringify(options)])
+      console.time("runGo")
+      runGo([JSON.stringify(options)])
     })
   </script>
 
