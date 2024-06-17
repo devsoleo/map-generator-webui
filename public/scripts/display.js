@@ -4,6 +4,7 @@ function getColor(value) {
 
 function display(data) {
   const canvas = document.getElementById('canvas')
+        canvas.style.background = 'white'
   const ctx = canvas.getContext('2d')
 
   const rows = data.length

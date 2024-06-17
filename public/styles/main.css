@@ -1,0 +1,28 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+div.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+div.form-container {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+div.container-fluid {
+  position: relative;
+  top: -10%;
+}
+
+canvas {
+  border: 1px solid var(--bs-border-color);
+}
